@@ -1,0 +1,17 @@
+{
+  "name": "my-lecture",
+  "private": true,
+  "scripts": {
+    "dev": "slidev --port 8781",
+    "build": "slidev build",
+    "export": "slidev export --timeout 60000"
+  },
+  "dependencies": {
+    "@slidev/cli": "51.8.2",
+    "@slidev/theme-default": "0.25.0",
+    "vue": "^3.5.0"
+  },
+  "devDependencies": {
+    "playwright-chromium": "^1.62.1"
+  }
+}

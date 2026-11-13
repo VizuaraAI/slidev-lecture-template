@@ -1,0 +1,56 @@
+/* extra classes for pages/a.md */
+
+/* Logistics cards */
+.lg { margin-top: 28px; flex: 1; display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; padding-bottom: 40px; }
+.lg .c { border-radius: 20px; padding: 20px 20px; background: var(--wash); display: flex; flex-direction: column; position: relative; overflow: hidden; }
+.lg .c .ic { font-size: 15px; font-weight: 800; color: #fff; width: 44px; height: 44px; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 16px; }
+.lg .c.indigo .ic { background: var(--indigo); } .lg .c.teal .ic { background: var(--teal); } .lg .c.amber .ic { background: var(--amber); }
+.lg .c b { font-size: 26px; font-weight: 800; letter-spacing: -.02em; }
+.lg .c p { margin: 10px 0 0; font-size: 18px; line-height: 1.45; color: var(--ink); }
+.lg .c span { margin-top: auto; padding-top: 12px; font-size: 14px; line-height: 1.45; color: var(--ink2); border-top: 1.5px solid var(--line); }
+
+/* Agenda */
+.agenda { margin-top: 24px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.agenda > div { position: relative; border-radius: 18px; padding: 18px 20px 18px 20px; background: #fff; border: 1.5px solid var(--line); box-shadow: 0 8px 22px -14px #0f172a40; min-height: 128px; }
+.agenda i { font-style: normal; display: inline-flex; width: 34px; height: 34px; border-radius: 10px; align-items: center; justify-content: center; font-weight: 800; font-size: 16px; background: var(--indigo); color: #fff; }
+.agenda b { display: block; margin-top: 12px; font-size: 19px; font-weight: 800; letter-spacing: -.01em; line-height: 1.2; }
+.agenda span { display: block; margin-top: 6px; font-size: 14.5px; color: var(--ink2); line-height: 1.4; }
+.agenda .half1::after, .agenda .half2::after { position: absolute; top: 18px; right: 18px; font-size: 11px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+.agenda .half1::after { content: "first half"; color: var(--teal); }
+.agenda .half1 i { background: var(--teal); }
+.agenda .half2::after { content: "second half"; color: var(--indigo); }
+.anote { margin: auto 0 18px; font-size: 16px; line-height: 1.45; color: var(--ink2); background: var(--indigo-l); border-radius: 14px; padding: 12px 18px; }
+.anote b { color: var(--ink); }
+
+/* Running example */
+.rx { margin-top: 22px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+.rx .m { border-radius: 20px; padding: 18px 22px; color: #fff; box-shadow: 0 14px 30px -18px #0f172a80; }
+.rx .m.indigo { background: linear-gradient(150deg, #6366f1, #4338ca); }
+.rx .m.dark { background: linear-gradient(150deg, #1e293b, #0f172a); }
+.rx .m.amber { background: linear-gradient(150deg, #fbbf24, #f59e0b); color: #1c1917; }
+.rx .m span { font-size: 12px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; opacity: .75; }
+.rx .m b { display: block; margin-top: 4px; font-size: 34px; font-weight: 800; letter-spacing: -.03em; }
+.rx .m p { margin: 6px 0 0; font-size: 15px; line-height: 1.4; opacity: .92; }
+.rxs { margin-top: 14px; }
+.rxs .stat b { font-size: 28px; }
+.req { margin: auto 0 22px; display: flex; align-items: center; gap: 20px; border-radius: 16px; padding: 14px 20px; border: 2px dashed #c7d2fe; }
+.req .q { flex: none; font-size: 21px; font-weight: 800; color: var(--indigo); }
+.req span { font-size: 15px; line-height: 1.4; color: var(--ink2); }
+.req b { color: var(--ink); }
+
+/* Two engines */
+.eng2 { margin-top: 18px; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.eng2 .e { border-radius: 20px; padding: 16px 22px; background: var(--wash); border-top: 6px solid var(--c); }
+.eng2 .e.v { --c: var(--indigo); } .eng2 .e.g { --c: var(--teal); }
+.eng2 .top { display: flex; align-items: baseline; justify-content: space-between; }
+.eng2 .top b { font-size: 30px; font-weight: 800; letter-spacing: -.02em; color: var(--c); }
+.eng2 .top span { font-size: 13px; font-weight: 700; color: var(--ink2); }
+.eng2 .ff { margin: 4px 0 8px; font-size: 14px; line-height: 1.4; color: var(--ink2); }
+.eng2 dl { margin: 0; display: grid; grid-template-columns: 112px 1fr; gap: 6px 10px; font-size: 13.5px; line-height: 1.38; }
+.eng2 dt { font-weight: 800; color: var(--c); font-size: 11.5px; letter-spacing: .06em; text-transform: uppercase; padding-top: 2px; }
+.eng2 dd { margin: 0; color: var(--ink); }
+.eng2 + .anote { margin-top: 14px; }
+.agenda .ov { background: var(--wash); border-style: dashed; }
+.agenda .ov i { background: var(--mute); }
+.lg + .lgnote { margin-top: 0; }
+.agenda .aic { position: absolute; top: 16px; right: 18px; width: 34px; height: 34px; }
